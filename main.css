@@ -208,3 +208,33 @@ section#products {
     text-align: justify;
   }
 }
+
+@media screen and (max-width: 640px) {
+    .container {
+      width: 100%;
+      margin: 0 auto;
+      max-width: 90vw;
+      padding: var(--spacing-medium) 0;
+    }
+  
+    .products {
+      display: grid;
+      width: 100%;
+      grid-template-columns: repeat(1, 90%);
+      column-gap: var(--spacing-small);
+      row-gap: var(--spacing-medium);
+      justify-content: center;
+    }
+  
+    .about article img {
+      max-width: 100%;
+      align-self: stretch;
+    }
+  
+    .about article {
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-medium);
+      text-align: justify;
+    }
+  }
